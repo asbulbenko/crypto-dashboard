@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.24.0",
+    "concurrently": "^6.4.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
@@ -17,6 +18,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "start":"concurrently \"nodemon index.js\" \"react-scripts start\"",
     "start:backend": "nodemon index.js",
     "start:frontend": "react-scripts start",
     "build": "react-scripts build",
